@@ -56,6 +56,21 @@ print('your weight now in kilograms is ', converted)
 
 #lets learn about strings
 course = "python's course for beginners"
-print(course[0])
+print(course[0:-1]) 
+
+# formatted strings
+first = 'john'
+second = 'smith'
+# the formated string is used to get messages in this form
+# e.g john [smith] is a coder
+msg = f'{first} {second} is a coder'
+print(msg)
+
+
+# lets calculate the length of variables
+# to do this you need to use the built in function len()
+course_length = 'python program for beginners'
+print(len(course_length))
+
 
 
