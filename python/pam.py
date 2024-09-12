@@ -70,7 +70,16 @@ print(msg)
 # lets calculate the length of variables
 # to do this you need to use the built in function len()
 course_length = 'python program for beginners'
-print(len(course_length))
+print(course_length.upper())
+print(course_length.lower())
+print(course_length.title())
+print(course_length.find('a'))
+print(course_length.replace('program','Program'))
+print('for' in course_length)
 
 
-
+# math functions
+pam = -5.88
+print(round(pam))
+print(abs(pam))
+ 
