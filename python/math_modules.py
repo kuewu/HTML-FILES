@@ -34,3 +34,76 @@ print(f'They need to put down {down_payments}')
 
 
 # the logical operators
+has_high_income = True
+has_good_credit = True
+has_criminal_record = False
+
+if has_high_income and has_good_credit:
+    print('eligible for loan')
+if has_high_income and not has_criminal_record:
+    print('eligible for loan')
+    
+# the comparison operator
+temperature = int(input('what is the temperatrure of your area? ')) 
+print(temperature)
+
+if temperature > 30:
+    print("its a hot day")
+elif temperature < 10:
+    print("it's a cold day")
+else:
+    print("its neither hot nor cold")
+    
+    
+#example of comparison operators
+name = input("what is your fucken name? ")
+print(name)
+
+if len(name) < 3:
+    print("name must be at least 3 characters")
+elif len(name) > 50:
+    print("name can be a maximum of 50")
+else:
+    print("name looks !")
+    
+
+#weight converter
+weight_of_patient = int(input("what is your weight? "))
+print(f'weight: {weight_of_patient}')
+
+type_of_weight = str(input('(L)bs or (K)g: '))
+print(type_of_weight.upper())
+
+if type_of_weight == "l":
+    print(f'You are {weight_of_patient*0.45} pounds')
+elif type_of_weight == "k":
+    print(f'you are {weight_of_patient//0.45} kilogram')
+else:
+    print('you are stupid')
+    
+    
+# the while loop
+i = 1
+
+while i <= 5:
+    print('*' * i)
+    i =i + 1
+print("leave me")
+
+# Guessing Game
+secret_number = 15
+guess_count = 0
+guess_limit = 5
+
+
+while guess_count < guess_limit :
+    guess = int(input('Guess: '))
+    guess_count +=1
+    if guess == secret_number:
+        print('you win')
+        if guess == guess:
+            print('you repeated the same number')
+            break
+else:
+        print('sorry you failed')
+    
