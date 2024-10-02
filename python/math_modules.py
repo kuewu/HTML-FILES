@@ -92,7 +92,7 @@ print("leave me")
 
 # Guessing Game
 secret_number = 15
-guess_count = 0
+guess_count = 0 
 guess_limit = 5
 
 
@@ -106,4 +106,27 @@ while guess_count < guess_limit :
             break
 else:
         print('sorry you failed')
+    
+    
+    
+#car game
+
+user_ask_count = ""
+while True :
+    user_ask_count =  input('> ').lower()
+    if user_ask_count == 'help':
+        print('''
+start - to start the car
+stop -  to stop the car
+ quit- to exit''')
+    elif user_ask_count == 'start':
+        print('car started ...... ready to go!')
+        if user_ask_count == 'start':
+            print('car has already started')
+    elif user_ask_count == 'stop':
+        print('car stopped.')
+    elif user_ask_count == 'quit':
+        break
+    else: 
+        print("i don't understand that............" )
     
