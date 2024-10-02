@@ -112,6 +112,7 @@ else:
 #car game
 
 user_ask_count = ""
+started = False
 while True :
     user_ask_count =  input('> ').lower()
     if user_ask_count == 'help':
@@ -120,11 +121,17 @@ start - to start the car
 stop -  to stop the car
  quit- to exit''')
     elif user_ask_count == 'start':
-        print('car started ...... ready to go!')
-        if user_ask_count == 'start':
-            print('car has already started')
+        if started:
+            print('car already started....')
+        else:
+            started = True
+            print('car started ...... ready to go!')
     elif user_ask_count == 'stop':
-        print('car stopped.')
+        if not started:
+            print('car alredy stopped.....')
+        else:
+            sterted = False
+            print('car stopped..........')
     elif user_ask_count == 'quit':
         break
     else: 
