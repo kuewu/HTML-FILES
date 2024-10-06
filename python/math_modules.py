@@ -130,7 +130,7 @@ stop -  to stop the car
         if not started:
             print('car alredy stopped.....')
         else:
-            sterted = False
+            started = False
             print('car stopped..........')
     elif user_ask_count == 'quit':
         break
@@ -138,3 +138,9 @@ stop -  to stop the car
         print("i don't understand that............" )
 
     
+    
+#lts time for the for loop
+for item in 'python':
+    print(item)
+for med in range(1000):
+    print(med)
