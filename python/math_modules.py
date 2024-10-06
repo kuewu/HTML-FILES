@@ -142,5 +142,7 @@ stop -  to stop the car
 #lts time for the for loop
 for item in 'python':
     print(item)
-for med in range(1000):
+for med in range(7,10):
     print(med)
+for egg in range(2,10,2):
+    print(egg)
