@@ -4,10 +4,16 @@
 <head>
     <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <title>my wedsite</title>
-    <link rel="stlesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!--professional way of writing an input-->
+
+    <h1 id="myh11">welcome</h1>
+    <label>username: </label>
+    <input id="mytext"> <br><br>
+    <button id="mysubmit"> submit </button>
 
     <h1 id="myh1"></h1>
     <p id="myp"></p>
@@ -56,6 +62,20 @@
         let extrastudent = students % 3;
         console.log(students);
         console.log(extrastudent);
+
+        //> how to accept user input
+        //> let usernames;
+        //>usernames = window.prompt(`what is your username? `)
+        //>console.log(usernames);
+
+
+        //> professional way
+        let username;
+        document.getElementById("mysubmit").onclick = function () {
+            username = document.getElementById("mytext").value;
+            console.log(`your name is ${username}`)
+            document.getElementById("myh1").textContent = `hello ${username}`
+        }
     </script>
 
 </body>
