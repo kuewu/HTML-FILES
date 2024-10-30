@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head charset="utf-8">
+    <title>counter program</title>
+    <style>
+        body {
+            background-image: url(https://media.istockphoto.com/id/121199853/photo/closeup-of-guy-working-on-a-laptop-indoor.webp?a=1&b=1&s=612x612&w=0&k=20&c=1cFqSPIjH981E69lJFNrRiqUDDsOqHfRdpW2CKu9sSc=);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #counterlabel {
+            font-size: 10em;
+            display: block;
+            text-align: center;
+            font-family: Helvetica;
+        }
+
+        #btncontainer {
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .buttons {
+            font-size: 1.5em;
+            color: white;
+            background-color: hwb(229 40% 6%);
+            cursor: pointer;
+            transition: background-color 0.25s;
+            border-radius: 27px;
+        }
+
+        .buttons:hover {
+            background-color: hwb(240 8% 30%);
+        }
+    </style>
+</head>
+
+<body>
+    <label id="counterlabel">0</label> <br>
+    <div id="btncontainer">
+        <button id="decreasebtn" class="buttons"> decrease </button>
+        <button id="resetbtn" class="buttons"> reset </button>
+        <button id="increasebtn" class="buttons"> increase </button>
+    </div>
+
+
+    <!-- JAVASCRIPT SESSION-->
+    <script>
+        const decreasebtn = document.getElementById("decreasebtn");
+        const resetbtn = document.getElementById("resetbtn");
+        const increasebtn = document.getElementById("increasebtn");
+        const counterlabel = document.getElementById("counterlabel");
+        let count = 0;
+        increasebtn.onclick = function () {
+            count++;
+            counterlabel.textContent = count;
+        }
+        decreasebtn.onclick = function () {
+            count--;
+            counterlabel.textContent = count;
+        }
+        resetbtn.onclick = function () {
+            count = 0;
+            counterlabel.textContent = count;
+        }
+        //>built in functions
+        console.log(Math.PI);
+        console.log(Math.E);
+    </script>
+
+
+
+</body>
+
+</html>

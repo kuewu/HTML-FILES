@@ -4,19 +4,35 @@
 <head>
     <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <title>my wedsite</title>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <link rel="js" href="index.js">
+
     <!--professional way of writing an input-->
 
     <h1 id="myh11">welcome</h1>
     <label>username: </label>
-    <input id="mytext"> <br><br>
+    <input id="mytext"> <br>
+    <html>
     <button id="mysubmit"> submit </button>
 
     <h1 id="myh1"></h1>
     <p id="myp"></p>
+
+
+    <!-- for constants -->
+    <h2 id="myradius"> Input the radius</h2>
+    <label>Radius: </label>
+    <input id="myrnum"> <br> <br>
+    <button id="myresults"> Results </button>
+    <h3 id="myh3"></h3>
+
+
+
+
+    <!-- JAVASCRPIT SECTION-->
     <script>
         console.log(`hello`);
         //> window.alert(`this is an alert`);
@@ -74,9 +90,51 @@
         document.getElementById("mysubmit").onclick = function () {
             username = document.getElementById("mytext").value;
             console.log(`your name is ${username}`)
-            document.getElementById("myh1").textContent = `hello ${username}`
+            document.getElementById("myh11").textContent = `hello ${username}`
+        }
+
+
+
+        //> let do type conversion
+        let pamela = window.prompt("how old are you? ");
+        pamela = Number(pamela);
+        pamela += 10;
+        console.log(pamela);
+
+        let x = 'pizza';
+        let y = "pizza";
+        let z = "pizza";
+
+        x = Number(x);
+        y = String(y);
+        z = Boolean(z);
+
+        console.log(x, typeof x);
+        console.log(y, typeof y);
+        console.log(z, typeof z);
+
+
+
+        //> moving to the use of constant
+        const PI = 3.14159;
+        let circumference;
+        5
+
+        let radius;
+        document.getElementById("myresults").onclick = function () {
+            radius = document.getElementById("myrnum").value;
+            radius = Number(radius);
+
+            circumference = 2 * PI * radius;
+            console.log(circumference);
+            document.getElementById("myh3").textContent = circumference + "cm";
         }
     </script>
+
+
+
+
+
 
 </body>
 
